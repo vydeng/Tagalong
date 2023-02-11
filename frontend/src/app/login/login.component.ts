@@ -31,6 +31,6 @@ export class LoginComponent {
 
   onSubmit() {
     this.loginService.addProfile(new Profile(this.form.value.name, this.form.value.contact, this.form.value.bio));
-    this.router.navigate([`../`], { relativeTo: this.route });
+    this.router.navigate([`../home`], { relativeTo: this.route });
   }
 } 

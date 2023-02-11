@@ -46,6 +46,21 @@
         </div>
     </nav>
 
+    <div *ngFor="let post of getPosts()">
+      <h3>
+        {{  post.title  }}
+      </h3>
+      <p>
+        {{  post.time }}
+      </p>
+      <p>
+        {{  post.people }}
+      </p>
+      <p>
+        {{  post.description }}
+      </p>
+    </div>
+
 <button type="button" [routerLink]="['/academicPost']">Post</button>
 
   <hr>

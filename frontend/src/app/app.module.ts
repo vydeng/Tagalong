@@ -25,10 +25,10 @@ import { ProfileComponent } from './profile/profile.component';
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
+      { path: '', component: LoginComponent },
       { path: 'academicFeed', component: AcademicFeedComponent },
       { path: 'academicPost', component: AcademicPostComponent },
-      { path: 'login', component: LoginComponent},
+      { path: 'home', component: HomeComponent},
       { path: 'profile', component: ProfileComponent }
     ])
   ],
