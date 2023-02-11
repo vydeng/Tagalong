@@ -1,16 +1,30 @@
-<header>Login</header>
+<h1>Login</h1>
 
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-group">
         <label for="title">
-            Looking for: 
+            Name
         </label>
         <input id="name" type="text" formControlName="title">
+        <br>
+        <label for="title">
+            Preferred Method of Contact
+        </label>
         <input id="contact" type="text" formControlName="contact">
+        <br>
+        <label for="title">
+            Bio
+        </label>
         <input id="bio" type="text" formControlName="bio">
+        <br>
         <a [routerLink]="['/']">
             <button type="submit">
-                Submit
+                Log-in
+            </button>
+        </a>
+        <a [routerLink]="['/']">
+            <button type="submit">
+                Sign-up!
             </button>
         </a>
     </div>
