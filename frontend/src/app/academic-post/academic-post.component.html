@@ -1,0 +1,13 @@
+<p>academic-post works!</p>
+<h2>Create Post</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="title">
+            Looking for: 
+        </label>
+        <input id="title" type="text" formControlName="title">
+    </div>
+
+
+</form>
