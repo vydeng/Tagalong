@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LoginService } from '../login.service';
 import { Profile } from '../profile';
+import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +16,9 @@ export class LoginComponent {
 
   constructor(
     private loginService: LoginService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router, 
+    private route: ActivatedRoute,
   ) {}
 
   ngOnInit() {
@@ -27,5 +31,6 @@ export class LoginComponent {
 
   onSubmit() {
     this.loginService.addProfile(new Profile(this.form.value.name, this.form.value.contact, this.form.value.bio));
+    this.router.navigate([`../`], { relativeTo: this.route });
   }
 } 
