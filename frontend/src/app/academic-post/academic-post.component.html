@@ -1,4 +1,3 @@
-<p>academic-post works!</p>
 <h2>Create Post</h2>
 
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
@@ -8,6 +7,26 @@
         </label>
         <input id="title" type="text" formControlName="title">
     </div>
-
+    <div class="form-group">
+        <label for="time">
+            Time:
+        </label>
+        <input id="title" type="text" formControlName="time">
+    </div>
+    <div class="form-group">
+        <label for="people">
+            Number of People:
+        </label>
+        <input id="title" type="text" formControlName="people">
+    </div>
+    <div class="form-group">
+        <label for="description">
+            Description:
+        </label>
+        <input id="title" type="text" formControlName="description">
+    </div>
+    <div>
+        <button class="button" type="submit"[disabled]="form.invalid" >Submit</button> 
+      </div>
 
 </form>

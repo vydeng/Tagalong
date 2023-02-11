@@ -21,6 +21,7 @@ import { AcademicPostComponent } from './academic-post/academic-post.component';
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      { path: '', component: HomeComponent },
       { path: 'academicFeed', component: AcademicFeedComponent },
       { path: 'academicPost', component: AcademicPostComponent }
     ])
