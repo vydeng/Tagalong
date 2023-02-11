@@ -1,14 +1,57 @@
-<p>academic-feed works!</p>
-<h1>
-    <a style="color: rgb(161, 22, 161)"
-    [routerLink]="['/']">
-    Tagalong
-    </a>  
-</h1> 
+<!DOCTYPE HTML>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
+  <title>Tagalong</title>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Font Awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="academic-feed.component.css">
+</head>
 
-<button type="button" [routerLink]="['/academicPost']">Post</button>
+<body>
+    <h1 class = "center">Academic</h1>
+    <nav class="navbar navbar-expand-md navbar-light sage">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" [routerLink]="['/']">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/academicFeed']">
+                    <i class="fa-solid fa-book"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-solid fa-car-side"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-solid fa-children"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
-  <hr>
+    <button type="button" class="btn btn-primary" [routerLink]="['/academicPost']">Post</button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- TODO: Your code here. -->
 
   
    
