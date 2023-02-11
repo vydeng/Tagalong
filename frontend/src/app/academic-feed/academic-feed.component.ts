@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AcademicService } from '../academic.service';
 
 @Component({
   selector: 'app-academic-feed',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AcademicFeedComponent {
 
+  constructor(
+    private academicService: AcademicService,
+  ) {}
+
+  getPosts(){
+    return this.academicService.getAcademicPosts()
+  }
 }
