@@ -1,0 +1,17 @@
+<header>Login</header>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="title">
+            Looking for: 
+        </label>
+        <input id="name" type="text" formControlName="title">
+        <input id="contact" type="text" formControlName="contact">
+        <input id="bio" type="text" formControlName="bio">
+        <a [routerLink]="['/']">
+            <button type="submit">
+                Submit
+            </button>
+        </a>
+    </div>
+</form>
