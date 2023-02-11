@@ -1,0 +1,11 @@
+{
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/workspace",
+    "service": "httpd",
+    "remoteUser": "vscode",
+    "forwardPorts": [80, 443, 4200, 8080],
+    "extensions": [
+        "zamerick.vscode-caddyfile-syntax",
+        "angular.ng-template"
+    ]
+}
