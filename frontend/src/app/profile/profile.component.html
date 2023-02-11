@@ -1,1 +1,12 @@
-<p>profile works!</p>
+<h1>Profile</h1>
+
+<div>
+    <h2>
+     Hi {{ getProfile().name }}
+    </h2>
+    <br>
+    <h3>Preferred method of contact:</h3>
+    <p>{{ getProfile().contact }}</p>
+    <h3>Bio: </h3>
+    <p>{{ getProfile().bio }}</p>
+</div>

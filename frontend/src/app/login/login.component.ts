@@ -27,6 +27,5 @@ export class LoginComponent {
 
   onSubmit() {
     this.loginService.addProfile(new Profile(this.form.value.name, this.form.value.contact, this.form.value.bio));
-    
   }
 } 
