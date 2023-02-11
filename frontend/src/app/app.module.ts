@@ -29,7 +29,7 @@ import { ProfileComponent } from './profile/profile.component';
       { path: 'academicFeed', component: AcademicFeedComponent },
       { path: 'academicPost', component: AcademicPostComponent },
       { path: 'login', component: LoginComponent},
-      { path: 'profile', component: ProfileComponent},
+      { path: 'profile', component: ProfileComponent }
     ])
   ],
   providers: [],

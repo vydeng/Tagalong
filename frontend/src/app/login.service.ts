@@ -5,7 +5,7 @@ import { Profile } from './profile';
   providedIn: 'root'
 })
 export class LoginService {
-  profile: Profile = new Profile("", "", "");
+  profile: Profile = new Profile("John", "Smith", "Hello");
 
   constructor() {}
 
