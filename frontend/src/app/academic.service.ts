@@ -6,16 +6,15 @@ import { Post } from './post'
 })
 export class AcademicService {
 
-  academicPosts = Post[] = [];
+  academicPosts:  Post[] = [];
   constructor() { }
 
   addPost(post: Post){
     this.academicPosts.push(post);
-    console.log(academicPosts.title);
-
+    console.log(post.title);
   }
 
   getAcademicPosts(){
-    return this.academicPosts
+    return this.academicPosts;
   }
 }

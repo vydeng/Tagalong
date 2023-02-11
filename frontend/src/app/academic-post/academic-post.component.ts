@@ -17,7 +17,10 @@ export class AcademicPostComponent {
 
   ngOnInit(){
     this.form=this.formBuilder.group({
-      title:['', Validators.required]
+      title:['', Validators.required],
+      time: ['', Validators.required],
+      people: ['', Validators.required],
+      description: ['', Validators.required]
     });
   }
 
