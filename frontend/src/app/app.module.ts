@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { AcademicFeedComponent } from './academic-feed/academic-feed.component';
 import { RouterModule } from '@angular/router';
 import { AcademicPostComponent } from './academic-post/academic-post.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +17,18 @@ import { AcademicPostComponent } from './academic-post/academic-post.component';
     HomeComponent,
     AcademicFeedComponent,
     AcademicPostComponent,
+    LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      { path: '', component: HomeComponent },
       { path: 'academicFeed', component: AcademicFeedComponent },
-      { path: 'academicPost', component: AcademicPostComponent }
+      { path: 'academicPost', component: AcademicPostComponent },
+      { path: 'login', component: LoginComponent}
     ])
   ],
   providers: [],

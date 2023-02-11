@@ -6,7 +6,7 @@ import { Post } from './post'
 })
 export class AcademicService {
 
-  academicPosts:  Post[] = [];
+  academicPosts: Post[] = [];
   constructor() { }
 
   addPost(post: Post){
