@@ -1,4 +1,3 @@
-<p>academic-feed works!</p>
 <h1>
     <a style="color: rgb(161, 22, 161)"
     [routerLink]="['/']">
@@ -6,9 +5,26 @@
     </a>  
 </h1> 
 
+
+
 <button type="button" [routerLink]="['/academicPost']">Post</button>
 
-  <hr>
+<div *ngFor="let post of getPosts()">
+  <h3>
+    {{  post.description  }}
+  </h3>
+  <p>
+    {{  post.time }}
+  </p>
+  <p>
+    {{  post.people }}
+  </p>
+  <p>
+    {{  post.description }}
+  </p>
+
+
+</div>
 
   
    

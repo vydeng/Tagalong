@@ -1,3 +1,9 @@
+<h1>
+    <a style="color: rgb(161, 22, 161)"
+    [routerLink]="['/academicFeed']">
+    Academic Feed
+    </a>  
+</h1> 
 <h2>Create Post</h2>
 
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
@@ -26,7 +32,9 @@
         <input id="title" type="text" formControlName="description">
     </div>
     <div>
-        <button class="button" type="submit"[disabled]="form.invalid" >Submit</button> 
-      </div>
+        <button class="button" type="submit"[disabled]="form.invalid" >
+                Submit
+        </button> 
+    </div>
 
 </form>
