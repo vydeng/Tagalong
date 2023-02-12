@@ -1,12 +1,16 @@
 <h1>Profile</h1>
 
-<div>
-    <h2>
-     Hi {{ getProfile().name }}
-    </h2>
-    <br>
-    <h3>Preferred method of contact:</h3>
-    <p>{{ getProfile().contact }}</p>
-    <h3>Bio: </h3>
-    <p>{{ getProfile().bio }}</p>
+<div style="text-align: center;">
+    <h2 class="name">Hi {{ getProfile().name }}!</h2>
+</div>
+<div style="text-align: center;">
+    <div class="container">
+        <br>
+        <strong class="white">Please reach me at:</strong>
+        <br>
+        <p class="box">{{ getProfile().contact }}</p>
+        <strong class="white">About me:</strong>
+        <br>
+        <p class="box">{{ getProfile().bio }}</p>
+    </div>
 </div>

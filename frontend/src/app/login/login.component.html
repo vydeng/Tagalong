@@ -1,31 +1,48 @@
 <h1>Login</h1>
 
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-group">
-        <label for="title">
-            Name
+        <label class="label" for="title">
+            Full Name
         </label>
-        <input id="name" type="text" formControlName="name">
         <br>
-        <label for="title">
-            Preferred Method of Contact
-        </label>
-        <input id="contact" type="text" formControlName="contact">
+        <input class="input" type="text" placeholder="Name" formControlName="name">
         <br>
-        <label for="title">
-            Bio
+        <label class="label" for="title">
+            Email
         </label>
-        <input id="bio" type="text" formControlName="bio">
+        <br>
+        <input class="input" type="text" placeholder="Email">
+        <br>
+        <label class="label" for="title">
+            Password
+        </label>
+        <br>
+        <input class="input" type="text" placeholder="Password">
+        <br>
+        <label class="label" for="title">
+            Describe the best way for people to reach out to you
+        </label>
+        <br>
+        <input class="input" type="text" placeholder="Contact Method" formControlName="contact">
+        <br>
+        <label class="label" for="title">
+            Write a short description about yourself
+        </label>
+        <br>
+        <input class="input" type="text" placeholder="Biography" formControlName="bio">
         <br>
         <a [routerLink]="['/']">
-            <button type="submit">
+            <button class="button" type="submit">
                 Log-in
             </button>
         </a>
         <a>
-            <button type="submit">
+            <button class="button" type="submit">
                 Sign-up!
             </button>
         </a>
+        <br>
+        <p style="color: rgb(224, 224, 212);">By signing in you agree with the Terms and Conditions and Privacy</p>
     </div>
 </form>
