@@ -44,7 +44,7 @@ button {
 
 body {
     background-color: rgb(252, 252, 238);
-    min-height: 700px;
+    min-height: 750px;
 }
 
 button:hover {
@@ -127,7 +127,7 @@ p {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
