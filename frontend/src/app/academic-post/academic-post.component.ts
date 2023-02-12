@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AcademicService } from '../academic.service';
 import { Post } from '../post';
+import { LoginService } from '../login.service';
 
 
 @Component({
@@ -16,6 +17,7 @@ export class AcademicPostComponent {
   constructor(
     private formBuilder: FormBuilder,
     private academicService: AcademicService,
+    private loginService: LoginService,
   ) {}
 
   ngOnInit(){
@@ -32,7 +34,7 @@ export class AcademicPostComponent {
     if(this.form.invalid){
       return;
     }
-    this.academicService.addPost(new Post(this.form.value.title, this.form.value.time, this.form.value.people, this.form.value.description));
+    this.academicService.addPost(new Post(this.loginService.getProfile(), this.form.value.title, this.form.value.time, this.form.value.people, this.form.value.description));
     window.alert(`post submitted`);
     this.form.reset();
     this.submitted=false;
