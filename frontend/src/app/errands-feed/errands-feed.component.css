@@ -89,11 +89,24 @@ button:hover {
     /* margin-bottom: 15px; */
 }
 
+.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .top {
     margin-top: 20px;
     text-align: start;
     padding: 5px 20px 20px 5px;
-    background-color: rgba(255, 255, 206, 0.617);
+    background-color: rgba(249, 249, 165, 0.617);
+    width: 680px;
+}
+
+.top2 {
+    margin-top: 20px;
+    text-align: start;
+    padding: 5px 20px 20px 5px;
+    background-color: rgba(249, 165, 196, 0.617);
     width: 680px;
 }
 

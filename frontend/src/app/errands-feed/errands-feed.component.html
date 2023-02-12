@@ -60,23 +60,59 @@
       </div>
   </nav>
 
-  <div class="posts"> 
-    <div *ngFor="let post of getPosts()">
-        <div class="post">
-          <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
-          <div class="block">
-            <p class="title"><b>{{ post.op.name }}: {{post.title}}</b></p>
-            <div class="block2">
-              <p class="time"> {{  post.time }}</p>
-              <p>number of people: {{  post.people }}</p>
-              <div class="top">
-                <p>{{  post.description }}</p>
-              </div>  
+  <div class="reverse">
+
+  <div class="posts">
+    <div class="post">
+      <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+        <div class="block">
+          <p class="title"><b>Sam: do you need a ride to trader joes?</b></p>
+          <div class="block2">
+            <p class="time">today at 7pm bc i love going right before close</p>
+            <p>number of people: i have 4 more seats in my carrr</p>
+            <div class="top">
+              <p>i will come pick u up if u live like within a 10 min drive of campus and let me be on aux</p>
             </div>  
+          </div>  
         </div>
       </div>
+    </div> 
+
+    <div class="posts">
+      <div class="post">
+        <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+          <div class="block">
+            <p class="title"><b>Bella: i need a ride to costco</b></p>
+            <div class="block2">
+              <p class="time">whenever</p>
+              <p>number of people: whoever fits in ur car ? its ur car</p>
+              <div class="top">
+                <p>i have a costco card but no car, u can use my card if u transport me there :)</p>
+              </div>  
+            </div>  
+          </div>
+        </div>
+      </div> 
+
+      <div class="posts"> 
+        <div *ngFor="let post of getPosts()">
+            <div class="post">
+              <div class="block">
+                <p class="title"><b> {{ post.op.name }}: {{post.title}}</b></p>
+                <div class="block2">
+                  <p class="time"> {{  post.time }}</p>
+                  <p>number of people: {{  post.people }}</p>
+                  <div class="top">
+                    <p>{{  post.description }}</p>
+                  </div>  
+                </div> 
+            </div>
+            <img src="https://storage.needpix.com/rsynced_images/profile-2398782_1280.png" width="50px" alt=""/> 
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
 
   <button type="button" class="btn sage position-fixed bottom-0 end-0 m-5 btn-lg" [routerLink]="['/errandsPost']">Post</button>
 

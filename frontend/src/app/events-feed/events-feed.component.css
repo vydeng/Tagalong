@@ -69,7 +69,7 @@ body {
 .block {
     display: flex;
     flex-direction: column;
-    background-color: rgba(213, 213, 213, 0.706);
+    background-color: rgba(224, 224, 224, 0.706);
     width: 800px;
     align-items: flex-start;
     justify-content: flex-start;
@@ -80,6 +80,11 @@ body {
 
 .block2 {
     margin-left: 69px;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .title {
@@ -93,7 +98,7 @@ body {
     margin-top: 20px;
     text-align: start;
     padding: 5px 20px 20px 5px;
-    background-color: rgba(255, 255, 206, 0.617);
+    background-color: rgba(254, 255, 207, 0.617);
     width: 680px;
 }
 
