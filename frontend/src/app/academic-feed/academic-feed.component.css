@@ -126,3 +126,15 @@ body {
 .flex-row {
     display: flex;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+h6 {
+    color: #faf3dd;
+    font-family: 'Work Sans', sans-serif;
+}

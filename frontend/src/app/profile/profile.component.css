@@ -87,7 +87,7 @@ h1 {
 body {
     background-color: rgb(252, 252, 238);
     width: 1450px;
-    height: 800px;
+    height: 750px;
 }
 
 .imgsize {
@@ -131,5 +131,17 @@ h2 {
 }
 
 strong {
+    font-family: 'Work Sans', sans-serif;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+h6 {
+    color: #faf3dd;
     font-family: 'Work Sans', sans-serif;
 }
