@@ -40,3 +40,69 @@ button:hover {
     background-color: #faf3dd;
     color: black;
 }
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(213, 213, 213, 0.706);
+    width: 800px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+
+.block2 {
+    margin-left: 69px;
+}
+
+.title {
+    font-size: 24px;
+    width: 100%;
+    padding: 0px 5px;
+    /* margin-bottom: 15px; */
+}
+
+.top {
+    margin-top: 20px;
+    text-align: start;
+    padding: 5px 20px 20px 5px;
+    background-color: rgba(255, 255, 206, 0.617);
+    width: 680px;
+}
+
+.time {
+    color: rgb(62, 0, 206);
+}
+
+p {
+    margin: 0px;
+}
+
+.postb {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px 50px;
+}
+
