@@ -66,9 +66,11 @@
 
   <div class="posts">
     <div class="post">
-      <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+  
+        <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+
         <div class="block">
-          <p class="title"><b>Sam: anyone going to see Etran De L'Air play Cat's Cradle Backroom</b></p>
+          <p class="title"><b><u>Sam: anyone going to see Etran De L'Air play Cat's Cradle Backroom</u></b></p>
           <div class="block2">
             <p class="time">April 3rd 7pm</p>
             <p>number of people: everyone!</p>
@@ -82,9 +84,11 @@
 
     <div class="posts">
       <div class="post">
-        <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+        <a [routerLink]="['/profile72']">
+          <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+        </a>
           <div class="block">
-            <p class="title"><b>Bella: looking for 2 people to join for valentine's van gogh exhibit. i have a car and the tickets</b></p>
+            <p class="title"><b><u>Bella: looking for 2 people to join for valentine's van gogh exhibit. i have a car and the tickets</u></b></p>
             <div class="block2">
               <p class="time">valentines @ 7</p>
               <p>number of people: 2</p>
@@ -101,7 +105,7 @@
     <div *ngFor="let post of getPosts()">
         <div class="post">
           <div class="block">
-            <p class="title"><b> {{ post.op.name }}: {{post.title}}</b></p>
+            <p class="title"><b><u> {{ post.op.name }}: {{post.title}}</u></b></p>
             <div class="block2">
               <p class="time"> {{  post.time }}</p>
               <p>number of people: {{  post.people }}</p>
@@ -110,7 +114,9 @@
               </div>  
             </div> 
         </div>
-        <img src="https://storage.needpix.com/rsynced_images/profile-2398782_1280.png" width="50px" alt=""/> 
+        <a [routerLink]="['/profile']">
+          <img src="https://storage.needpix.com/rsynced_images/profile-2398782_1280.png" width="50px" alt=""/>
+        </a>
       </div>
     </div>
   </div>
@@ -118,6 +124,10 @@
 </div>
 
   <button type="button" class="btn sage position-fixed bottom-0 end-0 m-5 btn-lg" [routerLink]="['/eventsPost']">Post</button>
+
+  <footer class="sage">
+    <h6 class="text-center mt-2">ⒸTagalong</h6>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

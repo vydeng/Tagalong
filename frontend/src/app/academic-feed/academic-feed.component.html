@@ -66,9 +66,11 @@
 
   <div class="posts">
     <div class="post">
+      <a [routerLink]="['/post55']">
       <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+    </a>
         <div class="block">
-          <p class="title"><b>Sam: study for comp 311 midterm</b></p>
+          <p class="title"><b><u>Sam: study for comp 311 midterm</u></b></p>
           <div class="block2">
             <p class="time">today any time after 3pm</p>
             <p>number of people: whoever wants to come</p>
@@ -82,9 +84,11 @@
 
     <div class="posts">
       <div class="post">
-        <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+        <a [routerLink]="['/profile72']">
+          <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+        </a>
           <div class="block">
-            <p class="title"><b>Bella: anybody still need a pearl hacks team?</b></p>
+            <p class="title"><b><u>Bella: anybody still need a pearl hacks team?</u></b></p>
             <div class="block2">
               <p class="time">feb 11 @ 11am</p>
               <p>number of people: 1</p>
@@ -100,7 +104,7 @@
         <div *ngFor="let post of getPosts()">
             <div class="post">
               <div class="block">
-                <p class="title"><b> {{ post.op.name }}: {{post.title}}</b></p>
+                <p class="title"><u><b> {{ post.op.name }}: {{post.title}}</b></u></p>
                 <div class="block2">
                   <p class="time"> {{  post.time }}</p>
                   <p>number of people: {{  post.people }}</p>
@@ -109,7 +113,9 @@
                   </div>  
                 </div> 
             </div>
-            <img src="https://storage.needpix.com/rsynced_images/profile-2398782_1280.png" width="50px" alt=""/> 
+            <a [routerLink]="['/profile']">
+              <img src="https://storage.needpix.com/rsynced_images/profile-2398782_1280.png" width="50px" alt=""/>
+            </a>
           </div>
         </div>
       </div>
@@ -117,7 +123,9 @@
 
   <button type="button" class="btn sage position-fixed bottom-0 end-0 m-5 btn-lg" [routerLink]="['/academicPost']">Post</button>
 
-
+  <footer class="sage">
+    <h6 class="text-center mt-2">ⒸTagalong</h6>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

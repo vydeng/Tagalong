@@ -44,7 +44,7 @@ button {
 
 body {
     background-color: rgb(252, 252, 238);
-    min-height: 700px;
+    min-height: 750px;
 }
 
 button:hover {
@@ -92,6 +92,7 @@ button:hover {
     width: 100%;
     padding: 0px 5px;
     /* margin-bottom: 15px; */
+    font-family: 'Work Sans', sans-serif;
 }
 
 .reverse {
@@ -103,15 +104,7 @@ button:hover {
     margin-top: 20px;
     text-align: start;
     padding: 5px 20px 20px 5px;
-    background-color: rgba(249, 249, 165, 0.617);
-    width: 680px;
-}
-
-.top2 {
-    margin-top: 20px;
-    text-align: start;
-    padding: 5px 20px 20px 5px;
-    background-color: rgba(249, 165, 196, 0.617);
+    background-color: rgba(255, 255, 206, 0.617);
     width: 680px;
 }
 
@@ -121,6 +114,8 @@ button:hover {
 
 p {
     margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+
 }
 
 .postb {
@@ -132,4 +127,16 @@ p {
 
 .flex-row {
     display: flex;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+h6 {
+    color: #faf3dd;
+    font-family: 'Work Sans', sans-serif;
 }

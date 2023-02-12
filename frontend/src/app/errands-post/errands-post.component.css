@@ -9,7 +9,7 @@ li {
 }
 
 .center {
-    margin-left: 28.5%;
+    margin-left: 26.5%;
     margin-top: 10px;
 }
 
@@ -35,6 +35,7 @@ button {
     font-family: 'Work Sans', sans-serif;
     font-size: 14pt;
     color: #faf3dd;
+    background-color: #809289;
 }
 
 button:hover {
@@ -45,7 +46,7 @@ button:hover {
 body {
     background-color: rgb(252, 252, 238);
     width: 1450px;
-    height: 700px;
+    height: 750px;
 }
 
 .form-container {
@@ -70,4 +71,16 @@ body {
 
 .flex-row {
     display: flex;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+h6 {
+    color: #faf3dd;
+    font-family: 'Work Sans', sans-serif;
 }
