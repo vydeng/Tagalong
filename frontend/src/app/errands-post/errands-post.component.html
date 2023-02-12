@@ -15,7 +15,7 @@
 <body>
   <div class="flex-row">
     <img src="../../assets/tagalong.jpeg" alt="Tagalong Logo" class="imgsize">
-    <h1 class="center" style="width: 30%;">Home</h1>
+    <h1 class="center" style="width: 30%;">Errands Post</h1>
   </div>
 
   <nav class="navbar navbar-expand-md navbar-light sage">
@@ -47,6 +47,11 @@
               <a class="nav-link egg" [routerLink]="['/eventsFeed']">
                 <h5>Events</h5>
                   <!-- <i class="fa-solid fa-children"></i> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link egg" [routerLink]="['/profile']">
+                <h5>Profile</h5>
               </a>
             </li>
           </ul>
@@ -93,3 +98,7 @@
   </div>
 
 </form>
+
+<footer class="sage">
+  <h6 class="text-center mt-2">ⒸTagalong</h6>
+</footer>
