@@ -48,6 +48,34 @@ button:hover {
 }
 
 .center {
-    margin-left: 28.5%;
+    margin-left: 30.5%;
     margin-top: 10px;
+}
+
+.box {
+    inline-size: 500px;
+    overflow-wrap: break-word;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.pale {
+    background-color: #b8c1a1;
+}
+
+.cream {
+    background-color: rgb(252, 252, 238);
+}
+
+@media screen and (min-width: 1024px) {
+    .box {
+        inline-size: 1000px;
+        overflow-wrap: break-word;
+    }
 }
