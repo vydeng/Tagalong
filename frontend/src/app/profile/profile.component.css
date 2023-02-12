@@ -1,0 +1,28 @@
+.white {
+    color: rgb(224, 224, 212);
+    font-size: large;
+}
+
+.container {
+    background-color: #629375;
+    border-radius: 5px;
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.box {
+    border: solid;
+    border-color: rgb(224, 224, 212);
+    background-color: rgb(224, 224, 212);
+    width: 70%;
+    padding: 5px;
+    margin: auto;
+    color: rgb(56, 47, 47);
+}
+
+.name {
+    margin: 20px;
+    color: rgb(56, 47, 47)
+}
