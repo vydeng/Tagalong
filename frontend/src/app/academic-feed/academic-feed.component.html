@@ -46,22 +46,22 @@
         </div>
     </nav>
 
-    <div *ngFor="let post of getPosts()">
-      <h3>
-        {{  post.title  }}
-      </h3>
-      <p>
-        {{  post.time }}
-      </p>
-      <p>
-        {{  post.people }}
-      </p>
-      <p>
-        {{  post.description }}
-      </p>
+    <div class="posts"> 
+      <div *ngFor="let post of getPosts()">
+        <div class="post">
+          <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+
+          <div class="block">
+            <p class="title"> {{ post.op.name }}: <b>{{post.title}}</b></p>
+            <p class="time"> {{  post.time }}</p>
+            <p> with number of people: <mark>{{  post.people }}</mark></p>
+            <p>{{  post.description }}</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-<button type="button" [routerLink]="['/academicPost']">Post</button>
+<button class="post" type="button" [routerLink]="['/academicPost']">Post</button>
 
   <hr>
 
