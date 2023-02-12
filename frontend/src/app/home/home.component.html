@@ -14,41 +14,48 @@
 </head>
 
 <body>
-    <h1 class = "center">Tagalong</h1>
-    <nav class="navbar navbar-expand-md navbar-light sage">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" [routerLink]="['/home']">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/academicFeed']">
-                    <i class="fa-solid fa-book"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fa-solid fa-car-side"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fa-solid fa-children"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+  <img src="../img/logo.png" alt="Tagalong Logo" class="imgsize">
+  <h1 class = "center">Events</h1>
+
+  <nav class="navbar navbar-expand-md navbar-light sage">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link egg" aria-current="page" [routerLink]="['/']">
+                <h5>Home</h5>
+                  <!-- <i class="fa-solid fa-house"></i> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link egg" [routerLink]="['/academicFeed']">
+                <h5>Academic</h5>
+                  <!-- <i class="fa-solid fa-book"></i> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link egg" [routerLink]="['/errandsFeed']">
+                <h5>Errands</h5>
+                  <!-- <i class="fa-solid fa-car-side"></i> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link egg" [routerLink]="['/eventsFeed']">
+                <h5>Events</h5>
+                  <!-- <i class="fa-solid fa-children"></i> -->
+              </a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </div>
+  </nav>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
-<!-- TODO: Your code here. -->
+  
+   
