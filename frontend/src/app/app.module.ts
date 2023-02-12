@@ -14,6 +14,8 @@ import { ErrandsFeedComponent } from './errands-feed/errands-feed.component';
 import { EventsFeedComponent } from './events-feed/events-feed.component';
 import { ErrandsPostComponent } from './errands-post/errands-post.component';
 import { EventsPostComponent } from './events-post/events-post.component';
+import { SamComponent } from './sam/sam.component';
+import { sample } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { EventsPostComponent } from './events-post/events-post.component';
     EventsFeedComponent,
     ErrandsPostComponent,
     EventsPostComponent,
+    SamComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { EventsPostComponent } from './events-post/events-post.component';
       { path: 'errandsFeed', component: ErrandsFeedComponent },
       { path: 'errandsPost', component: ErrandsPostComponent },
       { path: 'eventsFeed', component: EventsFeedComponent },
-      { path: 'eventsPost', component: EventsPostComponent }
+      { path: 'eventsPost', component: EventsPostComponent },
+      { path: 'post55', component: SamComponent }
     ])
   ],
   providers: [],
