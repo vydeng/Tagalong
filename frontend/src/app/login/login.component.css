@@ -1,0 +1,35 @@
+.form-group {
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    background: #629375;
+}
+
+.form {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    padding: 20px;
+}
+
+.input {
+    width: 80%;
+    height: 30px;
+    border-color: rgb(196, 196, 193);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: rgb(224, 224, 212);
+}
+
+.label {
+    color: rgb(224, 224, 212);
+    font-size: 15px;
+}
+
+.button {
+    background-color: rgb(224, 224, 212);
+    color: rgb(56, 47, 47);
+    margin-left: 20px;
+    border-radius: 20%;
+    border-color: rgb(196, 196, 193);
+}
