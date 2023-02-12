@@ -9,7 +9,8 @@ li {
 }
 
 .center {
-    text-align: center;
+    margin-left: 28.5%;
+    margin-top: 10px;
 }
 
 h1 {
@@ -19,7 +20,20 @@ h1 {
 
 .imgsize {
     background-size: 100% 100%;
+    height: 5rem;
+    width: 14rem;
     text-align: left;
+    padding: 10px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+body {
+    background-color: rgb(252, 252, 238);
+    width: 1450px;
+    height: 700px;
 }
 
 h5 {

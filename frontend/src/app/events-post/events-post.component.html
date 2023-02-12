@@ -13,8 +13,10 @@
 </head>
 
 <body>
-  <img src="../img/logo.png" alt="Tagalong Logo" class="imgsize">
-  <h1 class = "center">Create Events Post</h1>
+  <div class="flex-row">
+    <img src="../../assets/tagalong.jpeg" alt="Tagalong Logo" class="imgsize">
+    <h1 class="center" style="width: 30%;">Home</h1>
+  </div>
 
   <nav class="navbar navbar-expand-md navbar-light sage">
       <div class="container-fluid">
@@ -81,7 +83,7 @@
             Description:
         </label>
         <br>
-        <textarea class="input" placeholder="What would you like to contribute?" id="title" type="text" formControlName="description"></textarea>
+        <textarea style="height: 100px;" class="input" placeholder="What would you like to contribute?" id="title" type="text" formControlName="description"></textarea>
     </div>
     <div>
         <button class="button" type="submit"[disabled]="form.invalid" >
