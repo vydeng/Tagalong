@@ -25,6 +25,12 @@ h1 {
     padding: 10px;
 }
 
+body {
+    background-color: rgb(252, 252, 238);
+    width: 1450px;
+    height: 700px;
+}
+
 h5 {
     color: #faf3dd;
     font-family: 'Work Sans', sans-serif;

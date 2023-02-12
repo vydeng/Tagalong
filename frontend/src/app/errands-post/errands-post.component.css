@@ -38,6 +38,12 @@ button:hover {
     color: black;
 }
 
+body {
+    background-color: rgb(252, 252, 238);
+    width: 1450px;
+    height: 700px;
+}
+
 .form-container {
     margin: auto;
     margin-top: 30px;

@@ -106,3 +106,7 @@ p {
     color: white;
     padding: 5px 50px;
 }
+
+body {
+    background-color: rgb(252, 252, 238);
+}
