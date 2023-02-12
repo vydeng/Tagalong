@@ -92,6 +92,7 @@ button:hover {
     width: 100%;
     padding: 0px 5px;
     /* margin-bottom: 15px; */
+    font-family: 'Work Sans', sans-serif;
 }
 
 .reverse {
@@ -113,6 +114,8 @@ button:hover {
 
 p {
     margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+
 }
 
 .postb {
