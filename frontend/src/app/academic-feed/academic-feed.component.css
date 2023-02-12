@@ -9,6 +9,11 @@ li {
     background-color: #8A9A5B;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
 .center {
     margin-left: 28.5%;
     margin-top: 10px;

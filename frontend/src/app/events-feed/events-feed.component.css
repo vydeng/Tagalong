@@ -82,6 +82,11 @@ body {
     margin-left: 69px;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
 .reverse {
     display: flex;
     flex-direction: column-reverse;
