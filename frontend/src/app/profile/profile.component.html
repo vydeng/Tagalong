@@ -14,7 +14,7 @@
 <body>
     <div class="flex-row">
       <img src="../../assets/tagalong.jpeg" alt="Tagalong Logo" class="imgsize">
-      <h1 class="center" style="width: 30%;">Profile</h1>
+      <h1 class="center">Profile</h1>
     </div>
 
     <nav class="navbar navbar-expand-md navbar-light sage">
@@ -58,18 +58,20 @@
         </div>
     </nav>
 
-    <div style="text-align: center;">
+    <div class="m-3" style="text-align: center;">
         <h2 class="name">Hi {{ getProfile().name }}!</h2>
     </div>
+
     <div style="text-align: center;">
-        <div class="container">
+        <div class="container p-4">
+            <img src="../../assets/stock.jpeg" alt="profile picture" class="imgsize2"> 
             <br>
             <strong class="white">Please reach me at:</strong>
             <br>
-            <p class="box">{{ getProfile().contact }}</p>
+            <p class="box rounded-3">{{ getProfile().contact }}</p>
             <strong class="white">About me:</strong>
             <br>
-            <p class="box">{{ getProfile().bio }}</p>
+            <p class="box rounded-3">{{ getProfile().bio }}</p>
         </div>
     </div>
 </body>
