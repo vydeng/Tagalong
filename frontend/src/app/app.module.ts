@@ -14,6 +14,7 @@ import { ErrandsFeedComponent } from './errands-feed/errands-feed.component';
 import { EventsFeedComponent } from './events-feed/events-feed.component';
 import { ErrandsPostComponent } from './errands-post/errands-post.component';
 import { EventsPostComponent } from './events-post/events-post.component';
+import { BellaComponent } from './bella/bella.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { EventsPostComponent } from './events-post/events-post.component';
     EventsFeedComponent,
     ErrandsPostComponent,
     EventsPostComponent,
+    BellaComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { EventsPostComponent } from './events-post/events-post.component';
       { path: 'errandsFeed', component: ErrandsFeedComponent },
       { path: 'errandsPost', component: ErrandsPostComponent },
       { path: 'eventsFeed', component: EventsFeedComponent },
-      { path: 'eventsPost', component: EventsPostComponent }
+      { path: 'eventsPost', component: EventsPostComponent },
+      { path: 'profile72', component: BellaComponent }
     ])
   ],
   providers: [],

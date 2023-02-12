@@ -103,6 +103,10 @@ button:hover {
     width: 680px;
 }
 
+p {
+    font-family: 'Work Sans', sans-serif;
+}
+
 .time {
     color: rgb(62, 0, 206);
 }

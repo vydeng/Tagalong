@@ -87,6 +87,10 @@ body {
     top: 0;
 }
 
+p {
+    font-family: 'Work Sans', sans-serif;
+}
+
 .reverse {
     display: flex;
     flex-direction: column-reverse;
@@ -97,6 +101,7 @@ body {
     width: 100%;
     padding: 0px 5px;
     /* margin-bottom: 15px; */
+    font-family: 'Work Sans', sans-serif;
 }
 
 .top {
