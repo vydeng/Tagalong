@@ -1,5 +1,5 @@
 .form-group {
-    padding: 10px;
+    padding: 25px;
     margin: auto;
     border-radius: 5px;
     background: #629375;
@@ -9,7 +9,7 @@
     text-align: center;
     width: 45%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .input {
