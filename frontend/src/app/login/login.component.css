@@ -65,11 +65,3 @@ button:hover {
     color: rgb(224, 224, 212);
     font-size: 15px;
 }
-
-.button {
-    background-color: rgb(224, 224, 212);
-    color: rgb(56, 47, 47);
-    margin-left: 20px;
-    border-radius: 20%;
-    border-color: rgb(196, 196, 193);
-}
