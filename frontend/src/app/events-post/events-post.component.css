@@ -9,7 +9,7 @@ li {
 }
 
 .center {
-    margin-left: 28.5%;
+    margin-left: 27.5%;
     margin-top: 10px;
 }
 
@@ -33,7 +33,7 @@ h1 {
 body {
     background-color: rgb(252, 252, 238);
     width: 1450px;
-    height: 700px;
+    height: 750px;
 }
 
 h5 {
@@ -71,4 +71,16 @@ button:hover {
     border-radius: 5px;
     width: 90%;
     height: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+h6 {
+    color: #faf3dd;
+    font-family: 'Work Sans', sans-serif;
 }

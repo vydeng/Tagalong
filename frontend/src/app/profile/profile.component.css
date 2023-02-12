@@ -127,7 +127,8 @@ h2 {
     height: 10rem;
     width: 10rem;
     text-align: center;
-    padding: 10px;
+    margin: 10px;
+    border: solid 2px #8A9A5B;
 }
 
 strong {
