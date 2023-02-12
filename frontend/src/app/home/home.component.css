@@ -19,12 +19,27 @@ body {
     height: 800px;
 }
 
+.imagesize {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    border: solid 5px;
+    border-color: #8A9A5B;
+    border-radius: 50%;
+}
+
 .imgsize {
     background-size: 100% 100%;
     height: 5rem;
     width: 14rem;
     text-align: left;
     padding: 10px;
+}
+
+.images {
+    text-align: center;
+    margin: auto;
 }
 
 h5 {
