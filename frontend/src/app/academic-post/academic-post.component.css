@@ -41,6 +41,7 @@ button {
     font-family: 'Work Sans', sans-serif;
     font-size: 14pt;
     color: #faf3dd;
+    background-color: #809289;
 }
 
 button:hover {
