@@ -8,11 +8,6 @@ li {
     background-color: #8A9A5B;
 }
 
-.center {
-    margin-left: 28.5%;
-    margin-top: 10px;
-}
-
 h1 {
     color: #8A9A5B;
     font-family: 'Abril Fatface', cursive;
@@ -50,4 +45,9 @@ button:hover {
 
 .flex-row {
     display: flex;
+}
+
+.center {
+    margin-left: 28.5%;
+    margin-top: 10px;
 }
