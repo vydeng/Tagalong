@@ -54,34 +54,40 @@
 
 
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-container">
     <div class="form-group">
         <label for="title">
             Looking for: 
         </label>
-        <input id="title" type="text" formControlName="title">
+        <br>
+        <input class="input" placeholder="What do you need?" id="title" type="text" formControlName="title">
     </div>
     <div class="form-group">
         <label for="time">
             Time:
         </label>
-        <input id="title" type="text" formControlName="time">
+        <br>
+        <input class="input" id="title" placeholder="What day and time?" type="text" formControlName="time">
     </div>
     <div class="form-group">
         <label for="people">
             Number of People:
         </label>
-        <input id="title" type="text" formControlName="people">
+        <br>
+        <input id="title" class="input" placeholder="How many people do you need?"type="text" formControlName="people">
     </div>
     <div class="form-group">
         <label for="description">
-            Description:
+            What I Offer:
         </label>
-        <input id="title" type="text" formControlName="description">
+        <br>
+        <textarea id="title" class="input" type="text" placeholder="What would you like to contribute?" formControlName="description"></textarea>
     </div>
     <div>
         <button class="button" type="submit"[disabled]="form.invalid" >
                 Submit
         </button> 
     </div>
+  </div>
 
 </form>

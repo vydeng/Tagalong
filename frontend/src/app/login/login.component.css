@@ -31,6 +31,7 @@ button {
     font-family: 'Work Sans', sans-serif;
     font-size: 14pt;
     color: #faf3dd;
+    background-color:#8A9A5B;
 }
 
 button:hover {
@@ -58,10 +59,10 @@ button:hover {
     border-color: rgb(196, 196, 193);
     border-radius: 5px;
     margin-bottom: 15px;
-    background-color: rgb(224, 224, 212);
+    background-color: white;
 }
 
 .label {
-    color: rgb(224, 224, 212);
+    color: white;
     font-size: 15px;
 }
