@@ -10,7 +10,8 @@ li {
 }
 
 .center {
-    text-align: center;
+    margin-left: 28.5%;
+    margin-top: 10px;
 }
 
 h1 {
@@ -109,4 +110,9 @@ p {
 
 body {
     background-color: rgb(252, 252, 238);
+    min-height: 700px;
+}
+
+.flex-row {
+    display: flex;
 }

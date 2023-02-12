@@ -9,7 +9,8 @@ li {
 }
 
 .center {
-    text-align: center;
+    margin-left: 28.5%;
+    margin-top: 10px;
 }
 
 h1 {
@@ -65,4 +66,8 @@ button:hover {
     border-radius: 5px;
     width: 90%;
     height: 30px;
+}
+
+.flex-row {
+    display: flex;
 }
