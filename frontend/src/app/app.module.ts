@@ -15,6 +15,8 @@ import { EventsFeedComponent } from './events-feed/events-feed.component';
 import { ErrandsPostComponent } from './errands-post/errands-post.component';
 import { EventsPostComponent } from './events-post/events-post.component';
 import { BellaComponent } from './bella/bella.component';
+import { SamComponent } from './sam/sam.component';
+import { sample } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { BellaComponent } from './bella/bella.component';
     ErrandsPostComponent,
     EventsPostComponent,
     BellaComponent,
+    SamComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { BellaComponent } from './bella/bella.component';
       { path: 'errandsPost', component: ErrandsPostComponent },
       { path: 'eventsFeed', component: EventsFeedComponent },
       { path: 'eventsPost', component: EventsPostComponent },
-      { path: 'profile72', component: BellaComponent }
+      { path: 'profile72', component: BellaComponent },
+      { path: 'post55', component: SamComponent },
     ])
   ],
   providers: [],
