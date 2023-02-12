@@ -66,9 +66,11 @@
 
   <div class="posts">
     <div class="post">
+      <a [routerLink]="['/post55']">
       <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+    </a>
         <div class="block">
-          <p class="title"><b>Sam: study for comp 311 midterm</b></p>
+          <p class="title"><b><u>Sam: study for comp 311 midterm</u></b></p>
           <div class="block2">
             <p class="time">today any time after 3pm</p>
             <p>number of people: whoever wants to come</p>
@@ -82,9 +84,11 @@
 
     <div class="posts">
       <div class="post">
-        <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+        <a [routerLink]="['/profile72']">
+          <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+        </a>
           <div class="block">
-            <p class="title"><b>Bella: anybody still need a pearl hacks team?</b></p>
+            <p class="title"><b><u>Bella: anybody still need a pearl hacks team?</u></b></p>
             <div class="block2">
               <p class="time">feb 11 @ 11am</p>
               <p>number of people: 1</p>
@@ -100,7 +104,7 @@
         <div *ngFor="let post of getPosts()">
             <div class="post">
               <div class="block">
-                <p class="title"><b> {{ post.op.name }}: {{post.title}}</b></p>
+                <p class="title"><u><b> {{ post.op.name }}: {{post.title}}</b></u></p>
                 <div class="block2">
                   <p class="time"> {{  post.time }}</p>
                   <p>number of people: {{  post.people }}</p>

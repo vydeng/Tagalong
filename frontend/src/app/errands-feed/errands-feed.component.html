@@ -66,9 +66,11 @@
 
   <div class="posts">
     <div class="post">
+      <a [routerLink]="['/post55']">
       <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+    </a>
         <div class="block">
-          <p class="title"><b>Sam: do you need a ride to trader joes?</b></p>
+          <p class="title"><b><u>Sam: do you need a ride to trader joes?</u></b></p>
           <div class="block2">
             <p class="time">today at 7pm bc i love going right before close</p>
             <p>number of people: i have 4 more seats in my carrr</p>
@@ -82,9 +84,11 @@
 
     <div class="posts">
       <div class="post">
-        <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+        <a [routerLink]="['/profile72']">
+          <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+        </a>
           <div class="block">
-            <p class="title"><b>Bella: i need a ride to costco</b></p>
+            <p class="title"><b><u>Bella: i need a ride to costco</u></b></p>
             <div class="block2">
               <p class="time">whenever</p>
               <p>number of people: whoever fits in ur car ? its ur car</p>
@@ -100,7 +104,7 @@
         <div *ngFor="let post of getPosts()">
             <div class="post">
               <div class="block">
-                <p class="title"><b> {{ post.op.name }}: {{post.title}}</b></p>
+                <p class="title"><b><u> {{ post.op.name }}: {{post.title}}</u></b></p>
                 <div class="block2">
                   <p class="time"> {{  post.time }}</p>
                   <p>number of people: {{  post.people }}</p>
