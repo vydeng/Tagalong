@@ -10,12 +10,12 @@
   <!--Font Awesome-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
   <!--Importing google fonts-->
-  <link rel="stylesheet" href="academic-feed.component.css">
+  <link rel="stylesheet" href="errands-feed.component.css">
 </head>
 
 <body>
   <img src="../img/logo.png" alt="Tagalong Logo" class="imgsize">
-  <h1 class = "center">Academic</h1>
+  <h1 class = "center">Errands</h1>
 
   <nav class="navbar navbar-expand-md navbar-light sage">
       <div class="container-fluid">
@@ -53,24 +53,22 @@
       </div>
   </nav>
 
-    <div class="posts"> 
-      <div *ngFor="let post of getPosts()">
-        <div class="post">
-          <img src="https://nocache.alexslemonade.org/sites/all/modules/custom/alsf_user/images/user-profile-default-yellow.png" width="50px" alt=""/>
+  <div *ngFor="let post of getPosts()">
+    <h3>
+      {{  post.title  }}
+    </h3>
+    <p>
+      {{  post.time }}
+    </p>
+    <p>
+      {{  post.people }}
+    </p>
+    <p>
+      {{  post.description }}
+    </p>
+  </div>
 
-          <div class="block">
-            <p class="title"> {{ post.op.name }}: <b>{{post.title}}</b></p>
-            <p class="time"> {{  post.time }}</p>
-            <p> with number of people: <mark>{{  post.people }}</mark></p>
-            <p>{{  post.description }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <button type="button" class="btn sage position-fixed bottom-0 end-0 m-5 btn-lg" [routerLink]="['/academicPost']">Post</button>
-
-
+  <button type="button" class="btn sage position-fixed bottom-0 end-0 m-5 btn-lg" [routerLink]="['/errandsPost']">Post</button>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

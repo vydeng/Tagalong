@@ -10,6 +10,10 @@ import { RouterModule } from '@angular/router';
 import { AcademicPostComponent } from './academic-post/academic-post.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ErrandsFeedComponent } from './errands-feed/errands-feed.component';
+import { EventsFeedComponent } from './events-feed/events-feed.component';
+import { ErrandsPostComponent } from './errands-post/errands-post.component';
+import { EventsPostComponent } from './events-post/events-post.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { ProfileComponent } from './profile/profile.component';
     AcademicPostComponent,
     LoginComponent,
     ProfileComponent,
+    ErrandsFeedComponent,
+    EventsFeedComponent,
+    ErrandsPostComponent,
+    EventsPostComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +37,11 @@ import { ProfileComponent } from './profile/profile.component';
       { path: 'academicFeed', component: AcademicFeedComponent },
       { path: 'academicPost', component: AcademicPostComponent },
       { path: 'home', component: HomeComponent},
-      { path: 'profile', component: ProfileComponent }
+      { path: 'profile', component: ProfileComponent },
+      { path: 'errandsFeed', component: ErrandsFeedComponent },
+      { path: 'errandsPost', component: ErrandsPostComponent },
+      { path: 'eventsFeed', component: EventsFeedComponent },
+      { path: 'eventsPost', component: EventsPostComponent }
     ])
   ],
   providers: [],

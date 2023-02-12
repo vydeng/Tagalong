@@ -16,3 +16,24 @@ h1 {
     color: #8A9A5B;
     font-family: 'Abril Fatface', cursive;
 }
+
+.imgsize {
+    background-size: 100% 100%;
+    text-align: left;
+}
+
+h5 {
+    color: #faf3dd;
+    font-family: 'Work Sans', sans-serif;
+}
+
+button {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14pt;
+    color: #faf3dd;
+}
+
+button:hover {
+    background-color: #faf3dd;
+    color: black;
+}
