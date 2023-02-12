@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EventsService } from '../events.service';
 import { Post } from '../post';
 import { LoginService } from '../login.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-events-post',
@@ -17,6 +18,8 @@ export class EventsPostComponent {
     private formBuilder: FormBuilder,
     private eventsService: EventsService,
     private loginService: LoginService,
+    private router: Router,
+    private route: ActivatedRoute,
   ) {}
 
   ngOnInit(){
@@ -34,9 +37,9 @@ export class EventsPostComponent {
       return;
     }
     this.eventsService.addPost(new Post(this.loginService.getProfile(), this.form.value.title, this.form.value.time, this.form.value.people, this.form.value.description));
-    window.alert(`post submitted`);
+    //window.alert(`post submitted`);
     this.form.reset();
     this.submitted=false;
-
+    this.router.navigate([`../eventsFeed`],{relativeTo: this.route});
   }
 }

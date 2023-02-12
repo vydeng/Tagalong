@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ErrandsService } from '../errands.service';
 import { Post } from '../post';
 import { LoginService } from '../login.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-errands-post',
@@ -17,6 +18,8 @@ export class ErrandsPostComponent {
     private formBuilder: FormBuilder,
     private errandsService: ErrandsService,
     private loginService: LoginService,
+    private router: Router,
+    private route: ActivatedRoute,
   ) {}
 
   ngOnInit(){
@@ -34,9 +37,9 @@ export class ErrandsPostComponent {
       return;
     }
     this.errandsService.addPost(new Post(this.loginService.getProfile(), this.form.value.title, this.form.value.time, this.form.value.people, this.form.value.description));
-    window.alert(`post submitted`);
+    //window.alert(`post submitted`);
     this.form.reset();
     this.submitted=false;
-
+    this.router.navigate([`../errandsFeed`], {  relativeTo:this.route});
   }
 }
